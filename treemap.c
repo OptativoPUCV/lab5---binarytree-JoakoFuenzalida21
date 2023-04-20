@@ -120,7 +120,7 @@ Pair * firstTreeMap(TreeMap * tree) {
   }
   
   tree -> current = node;
-    return node;
+    return node->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
