@@ -110,7 +110,17 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+  if(tree->root == NULL)  return NULL;
+
+  TreeNode *node = tree-> root;
+
+  while(node -> left != NULL)
+  {
+      node = node -> left; 
+  }
+  
+  tree -> current = node;
+    return node;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
