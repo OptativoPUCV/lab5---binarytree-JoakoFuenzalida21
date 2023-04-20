@@ -60,9 +60,9 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
   {
     tree->root = new;
 
-    return;
+    
   }
-
+  return;
 }
 
 TreeNode * minimum(TreeNode * x){
