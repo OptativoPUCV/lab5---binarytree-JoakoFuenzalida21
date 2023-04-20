@@ -60,7 +60,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
   {
     tree->root= node;
 
-    return node;
+    return;
   }
 
 }
